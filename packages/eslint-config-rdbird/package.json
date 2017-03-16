@@ -1,0 +1,48 @@
+{
+  "name": "eslint-config-rdbird",
+  "version": "0.0.1",
+  "description": "RdBird's ESLint configuration",
+  "homepage": "https://github.com/RdBird/eslint-config-rdbird#readme",
+  "author": "Julien Polo <jpolo@auchan.fr>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "source:list-rules": "eslint-index .eslintrc.js --docs",
+    "source:table-rules": "eslint-index .eslintrc.js --format table",
+    "source:count-rules": "eslint-index .eslintrc.js --format number",
+    "source:list-omitted-rules": "eslint-index .eslintrc.js --status omitted --docs",
+    "source:count-omitted-rules": "eslint-index .eslintrc.js --status omitted --format number",
+    "source:list-enabled-rules": "eslint-index .eslintrc.js --status warn error --docs",
+    "source:count-enabled-rules": "eslint-index .eslintrc.js --status warn error --format number",
+    "source:list-disabled-rules": "eslint-index .eslintrc.js --status omitted off --docs",
+    "source:count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "rdbird"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RdBird/eslint-config-rdbird.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RdBird/eslint-config-rdbird/issues"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.13.1",
+    "eslint-plugin-flowtype": "^2.28.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-react": "^6.7.1"
+  },
+  "devDependencies": {
+    "eslint-index": "^1.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.13.1"
+  }
+}
