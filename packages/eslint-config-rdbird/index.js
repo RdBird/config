@@ -10,7 +10,7 @@ module.exports = {
       experimentalObjectRestSpread: true,
       globalReturn: false,
       impliedStrict: true,
-    }
+    },
     sourceType: 'module',
   },
 

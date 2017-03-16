@@ -8,15 +8,16 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "source:list-rules": "eslint-index .eslintrc.js --docs",
-    "source:table-rules": "eslint-index .eslintrc.js --format table",
-    "source:count-rules": "eslint-index .eslintrc.js --format number",
-    "source:list-omitted-rules": "eslint-index .eslintrc.js --status omitted --docs",
-    "source:count-omitted-rules": "eslint-index .eslintrc.js --status omitted --format number",
-    "source:list-enabled-rules": "eslint-index .eslintrc.js --status warn error --docs",
-    "source:count-enabled-rules": "eslint-index .eslintrc.js --status warn error --format number",
-    "source:list-disabled-rules": "eslint-index .eslintrc.js --status omitted off --docs",
-    "source:count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
+    "format": "eslint . --fix",
+    "rules:list": "eslint-index .eslintrc.js --docs",
+    "rules:table": "eslint-index .eslintrc.js --format table",
+    "rules:count": "eslint-index .eslintrc.js --format number",
+    "rules:list-omitted": "eslint-index .eslintrc.js --status omitted --docs",
+    "rules:count-omitted": "eslint-index .eslintrc.js --status omitted --format number",
+    "rules:list-enabled": "eslint-index .eslintrc.js --status warn error --docs",
+    "rules:count-enabled": "eslint-index .eslintrc.js --status warn error --format number",
+    "rules:list-disabled": "eslint-index .eslintrc.js --status omitted off --docs",
+    "rules:count-disabled": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "keywords": [
     "eslint",
