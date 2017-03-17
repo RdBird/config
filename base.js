@@ -23,11 +23,12 @@ module.exports = {
 
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins
   plugins: [
-    'import'
+    'import',
+    'jsdoc',
   ],
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
-
+    './rules/jsdoc/jsdoc'
   ].map(require.resolve)
 };

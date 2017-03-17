@@ -9,15 +9,15 @@
   "scripts": {
     "lint": "eslint .",
     "format": "eslint . --fix",
-    "rules:list": "eslint-index .eslintrc.js --docs",
-    "rules:table": "eslint-index .eslintrc.js --format table",
-    "rules:count": "eslint-index .eslintrc.js --format number",
-    "rules:list-omitted": "eslint-index .eslintrc.js --status omitted --docs",
-    "rules:count-omitted": "eslint-index .eslintrc.js --status omitted --format number",
-    "rules:list-enabled": "eslint-index .eslintrc.js --status warn error --docs",
-    "rules:count-enabled": "eslint-index .eslintrc.js --status warn error --format number",
-    "rules:list-disabled": "eslint-index .eslintrc.js --status omitted off --docs",
-    "rules:count-disabled": "eslint-index .eslintrc.js --status omitted off --format number"
+    "rule:list": "eslint-index __tests__/eslintrc-test.js --docs",
+    "rule:table": "eslint-index __tests__/eslintrc-test.js --format table",
+    "rule:count": "eslint-index __tests__/eslintrc-test.js --format number",
+    "rule:list-omitted": "eslint-index __tests__/eslintrc-test.js --status omitted --docs",
+    "rule:count-omitted": "eslint-index __tests__/eslintrc-test.js --status omitted --format number",
+    "rule:list-enabled": "eslint-index __tests__/eslintrc-test.js --status warn error --docs",
+    "rule:count-enabled": "eslint-index __tests__/eslintrc-test.js --status warn error --format number",
+    "rule:list-disabled": "eslint-index __tests__/eslintrc-test.js --status omitted off --docs",
+    "rule:count-disabled": "eslint-index __tests__/eslintrc-test.js --status omitted off --format number"
   },
   "keywords": [
     "eslint",
@@ -38,6 +38,7 @@
     "eslint-plugin-flowtype": "^2.28.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-jsdoc": "^2.4.0",
     "eslint-plugin-react": "^6.7.1"
   },
   "devDependencies": {

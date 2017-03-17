@@ -1,8 +1,7 @@
 module.exports = {
   root: true,
   extends: [
-    './index.js',
-    //'./react.js'
+    '../all.js',
   ],
   rules: {
   }
