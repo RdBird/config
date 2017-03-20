@@ -4,7 +4,7 @@
 
 ### 1. Install dependency
 ```sh
-npm install eslint-config-rdbird --save-dev
+npm install @rdbird/eslint-config --save-dev
 ```
 
 ### 2. Update `.eslint.json` 
@@ -13,7 +13,7 @@ Use all plugins :
 {
   "root": true,
   "extends": [
-    "rdbird"
+    "@rdbird/eslint-config"
   ]
 }
 ```
@@ -25,10 +25,10 @@ Cherry pick plugins :
 {
   "root": true,
   "extends": [
-    "rdbird/base",
-    "rdbird/react",
-    "rdbird/jsx-a11y",
-    "rdbird/flowtype"
+    "@rdbird/eslint-config/base",
+    "@rdbird/eslint-config/react",
+    "@rdbird/eslint-config/jsx-a11y",
+    "@rdbird/eslint-config/flowtype"
   ]
 }
 ```

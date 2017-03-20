@@ -1,14 +1,15 @@
 {
-  "name": "eslint-config-rdbird",
+  "name": "@rdbird/eslint-config",
   "version": "0.0.1",
   "description": "RdBird's ESLint configuration",
-  "homepage": "https://github.com/RdBird/eslint-config-rdbird#readme",
+  "homepage": "https://github.com/RdBird/eslint-config#readme",
   "author": "Julien Polo <jpolo@auchan.fr>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "format": "eslint . --fix",
+    "test": "eslint --config __tests__/eslintrc-test.js __tests__/fixtures",
     "rule:list": "eslint-index __tests__/eslintrc-test.js --docs",
     "rule:table": "eslint-index __tests__/eslintrc-test.js --format table",
     "rule:count": "eslint-index __tests__/eslintrc-test.js --format number",
@@ -27,10 +28,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RdBird/eslint-config-rdbird.git"
+    "url": "git+https://github.com/RdBird/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/RdBird/eslint-config-rdbird/issues"
+    "url": "https://github.com/RdBird/eslint-config/issues"
   },
   "dependencies": {
     "babel-eslint": "^7.1.1",
