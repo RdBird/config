@@ -1,6 +1,6 @@
 {
   "name": "@rdbird/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "RdBird's ESLint configuration",
   "homepage": "https://github.com/RdBird/eslint-config#readme",
   "author": "Julien Polo <jpolo@auchan.fr>",
@@ -38,8 +38,8 @@
     "eslint": "^3.13.1",
     "eslint-plugin-flowtype": "^2.28.2",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.1",
     "eslint-plugin-jsdoc": "^2.4.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
     "eslint-plugin-react": "^6.7.1"
   },
   "devDependencies": {
