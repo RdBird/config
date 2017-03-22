@@ -4,7 +4,7 @@ module.exports = {
   parser: 'babel-eslint',
 
   // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
-  parserOptions: {
+  /* parserOptions: {
     ecmaVersion: 2017,
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
@@ -12,23 +12,24 @@ module.exports = {
       impliedStrict: true,
     },
     sourceType: 'module',
-  },
+  }, */
 
   // http://eslint.org/docs/user-guide/configuring#specifying-environments
-  env: {
+  /* env: {
     browser: true,
     node: true,
     es6: true
-  },
+  }, */
 
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins
   plugins: [
-    'import',
     'jsdoc',
   ],
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
-    './rules/jsdoc/jsdoc'
-  ].map(require.resolve)
-};
+    'eslint-config-standard',
+    './rules/ecma',
+    './rules/jsdoc',
+  ].map(require.resolve),
+}

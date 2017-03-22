@@ -1,13 +1,13 @@
 // @flow
 /* eslint-disable react/prop-types */
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 type TestComponentDefaultProps = {};
 
 type TestComponentProps = TestComponentDefaultProps & {
-  className?: string;
-  children?: any;
+  children?: mixed,
+  className?: string
 };
 
 type TestComponentState = void;
@@ -15,28 +15,28 @@ type TestComponentState = void;
 export class TestComponent extends Component<TestComponentDefaultProps, TestComponentProps, TestComponentState> {
   static defaultProps = {}
 
-  //componentWillMount() {}
+  // componentWillMount() {}
 
-  //componentDidMount() {}
+  // componentDidMount() {}
 
-  //componentWillReceiveProps(nextProps: TestComponentProps) {}
+  // componentWillReceiveProps(nextProps: TestComponentProps) {}
 
-  //componentDidReceiveProps() {}
+  // componentDidReceiveProps() {}
 
-  //shouldComponentUpdate(nextProps: TestComponentProps, nextState: TestComponentState) {}
+  // shouldComponentUpdate(nextProps: TestComponentProps, nextState: TestComponentState) {}
 
-  //componentWillUpdate(nextProps: TestComponentProps, nextState: TestComponentState) {}
+  // componentWillUpdate(nextProps: TestComponentProps, nextState: TestComponentState) {}
 
-  //componentDidUpdate(prevProps: TestComponentProps, prevState: TestComponentState) {}
+  // componentDidUpdate(prevProps: TestComponentProps, prevState: TestComponentState) {}
 
-  //componentWillUnmount() {}
+  // componentWillUnmount() {}
 
   render() {
     const {
       children,
       className,
       ...other
-    } = this.props;
+    } = this.props
     return (
       <div
         className={ className }
@@ -44,6 +44,6 @@ export class TestComponent extends Component<TestComponentDefaultProps, TestComp
       >
         { children }
       </div>
-    );
+    )
   }
 }

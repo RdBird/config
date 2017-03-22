@@ -1,1 +1,1 @@
-module.exports = require('./all.js');
+module.exports = require('./all.js')

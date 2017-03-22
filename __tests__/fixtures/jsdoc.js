@@ -1,3 +1,4 @@
+// @flow
 
 /**
  * [run description]

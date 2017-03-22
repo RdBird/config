@@ -3,6 +3,4 @@ module.exports = {
   extends: [
     '../all.js',
   ],
-  rules: {
-  }
 };

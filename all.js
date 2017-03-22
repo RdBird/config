@@ -3,5 +3,5 @@ module.exports = {
     './base',
     './react',
     './flowtype',
-  ].map(require.resolve)
-};
+  ].map(require.resolve),
+}

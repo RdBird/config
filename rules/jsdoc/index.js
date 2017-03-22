@@ -12,4 +12,4 @@ module.exports = {
     'jsdoc/require-returns-description': 'error',
     'jsdoc/require-returns-type': 0,
   },
-};
+}

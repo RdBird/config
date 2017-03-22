@@ -1,13 +1,13 @@
 module.exports = {
   settings: {
     flowtype: {
-      onlyFilesWithFlowAnnotation: false
-    }
+      onlyFilesWithFlowAnnotation: false,
+    },
   },
   plugins: [
-    'flowtype'
+    'flowtype',
   ],
   extends: [
-    './rules/flowtype/flowtype'
-  ].map(require.resolve)
-};
+    './rules/flowtype',
+  ].map(require.resolve),
+}
