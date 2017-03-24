@@ -3,4 +3,7 @@ module.exports = {
   extends: [
     '../all.js',
   ],
+  rules: {
+    'flowtype/require-valid-file-annotation': 'off',
+  }
 };

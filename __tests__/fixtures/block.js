@@ -1,4 +1,3 @@
-// @flow
 export function test() {
   const returnValue = [];
   for (let i = 0; i < 10; i++) {
@@ -8,4 +7,4 @@ export function test() {
       returnValue.push(['even', i]);
     }
   }
-}
+};
