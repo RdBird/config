@@ -8,6 +8,7 @@ module.exports = {
     'react',
   ],
   extends: [
-
+    'eslint-config-standard-react',
+    './rules/react',
   ].map(require.resolve),
 }
