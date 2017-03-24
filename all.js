@@ -5,4 +5,4 @@ module.exports = {
     './react',
     './flowtype',
   ].map(require.resolve),
-}
+};

@@ -32,4 +32,4 @@ module.exports = {
     './rules/ecma',
     './rules/jsdoc',
   ].map(require.resolve),
-}
+};

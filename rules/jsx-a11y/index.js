@@ -1,6 +1,5 @@
 module.exports = {
   /**
-   * Enforce emojis are wrapped in and provide screenreader access
    * @see https://github.com/evcohen/eslint-plugin-jsx-a11y/README.md
    */
   rules: {
@@ -34,4 +33,4 @@ module.exports = {
     'jsx-a11y/scope': 'error',
     'jsx-a11y/tabindex-no-positive': 'off',
   },
-}
+};

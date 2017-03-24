@@ -11,4 +11,4 @@ module.exports = {
     'eslint-config-standard-react',
     './rules/react',
   ].map(require.resolve),
-}
+};

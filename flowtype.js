@@ -10,4 +10,4 @@ module.exports = {
   extends: [
     './rules/flowtype',
   ].map(require.resolve),
-}
+};
