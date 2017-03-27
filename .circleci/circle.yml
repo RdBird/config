@@ -1,0 +1,20 @@
+version: 2
+
+jobs:
+  build:
+    steps:
+
+      - checkout
+
+      - run:
+          command: |
+            npm install
+
+      - run:
+          command: |
+            npm run test
+
+      - deploy:
+          command: |
+            echo "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login -scope=@RdBird
+            npm publish || true
