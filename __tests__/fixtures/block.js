@@ -6,5 +6,14 @@ export function test() {
     } else {
       returnValue.push(['even', i]);
     }
+
+    switch (i) {
+      case 0:
+        break;
+      case 1:
+        break;
+      default:
+        // do nothing
+    }
   }
 };
