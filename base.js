@@ -15,15 +15,17 @@ module.exports = {
   }, */
 
   // http://eslint.org/docs/user-guide/configuring#specifying-environments
-  /* env: {
+  env: {
     browser: true,
     node: true,
-    es6: true
-  }, */
+    es6: true,
+  },
 
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins
   plugins: [
     'jsdoc',
+    'node',
+    'import',
   ],
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
