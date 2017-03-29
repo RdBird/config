@@ -13,10 +13,11 @@ module.exports = {
     'prefer-template': 'error',
     'quote-props': ['error', 'as-needed', { 'unnecessary': false }],
 
-    // TODO clean because duplicate
+    // TODO clean duplicates
     'import/export': 'error',
     'import/first': 'error',
     'import/no-duplicates': 'error',
     'import/no-mutable-exports': 'error',
+    'import/no-unresolved': ['error', { caseSensitive: true, commonjs: true, amd: true }],
   }, override.rules),
 };
