@@ -24,4 +24,11 @@ export function test() {
         // do nothing
     }
   }
+
+  // Ternary operator
+  return (
+    reprs.length === 0 ? 'zero' :
+    reprs.length === 1 ? 'one' :
+    'other'
+  );
 }

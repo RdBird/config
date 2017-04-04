@@ -8,5 +8,6 @@ module.exports = {
     'no-unneeded-ternary': 'off', // It causes some bugs
     'semi': ['error', 'always'],
     'space-before-function-paren': ['error', { 'anonymous': 'always', 'named': 'never' }],
+    'operator-linebreak': ['error', 'after'],
   },
 };
