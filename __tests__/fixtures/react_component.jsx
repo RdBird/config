@@ -12,7 +12,11 @@ type TestComponentProps = TestComponentDefaultProps & {
 
 type TestComponentState = void;
 
-export class TestComponent extends Component<TestComponentDefaultProps, TestComponentProps, TestComponentState> {
+export class TestComponent extends Component<
+  TestComponentDefaultProps,
+  TestComponentProps,
+  TestComponentState
+> {
   static defaultProps = {}
 
   // componentWillMount() {}

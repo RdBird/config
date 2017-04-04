@@ -14,6 +14,24 @@ const restrictedProperties = [{
   property: 'pow',
   message: 'Use the exponentiation operator (**) instead.',
 }];
+const restrictedSyntax = [
+  {
+    selector: 'ForInStatement',
+    message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+  },
+  {
+    selector: 'ForOfStatement',
+    message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+  },
+  {
+    selector: 'LabeledStatement',
+    message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+  },
+  {
+    selector: 'WithStatement',
+    message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+  },
+];
 
 module.exports = {
   rules: Object.assign({
@@ -26,8 +44,26 @@ module.exports = {
     'default-case': ['error', { commentPattern: '^no default$' }],
     'dot-notation': ['error', { allowKeywords: true }],
     'guard-for-in': 'error',
+    'id-blacklist': 'off',
+    'id-length': 'off',
+    'id-match': 'off',
+    'linebreak-style': ['error', 'unix'],
+    'lines-around-comment': 'off',
+    'lines-around-directive': ['error', { before: 'always', after: 'always' }],
+    'max-depth': ['off', 4],
+    'max-len': ['error', 100, 2, { ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
+    'max-lines': ['off', { max: 300, skipBlankLines: true, skipComments: true }],
+    'max-nested-callbacks': 'off',
+    'max-params': ['off', 3],
+    'max-statements-per-line': ['off', { max: 1 }],
+    'max-statements': ['off', 10],
+    'multiline-ternary': ['off', 'never'],
+    'newline-after-var': 'off',
+    'newline-before-return': 'off',
+    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
     'no-alert': 'warn',
     'no-await-in-loop': 'error',
+    'no-bitwise': 'error',
     'no-case-declarations': 'error',
     'no-compare-neg-zero': 'error',
     'no-console': 'warn',
@@ -39,10 +75,15 @@ module.exports = {
     'no-extra-semi': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'off',
+    'no-inline-comments': 'off',
     'no-invalid-this': 'off',
+    'no-lonely-if': 'error',
     'no-magic-numbers': ['off', { ignore: [], ignoreArrayIndexes: true, enforceConst: true, detectObjects: false }],
+    'no-negated-condition': 'off',
     'no-param-reassign': 'error',
+    'no-plusplus': 'error',
     'no-restricted-properties': ['error', ...restrictedProperties],
+    'no-restricted-syntax': ['error', ...restrictedSyntax],
     'no-return-await': 'error',
     'no-script-url': 'error',
     'no-spaced-func': 'error',
