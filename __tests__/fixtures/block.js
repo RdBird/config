@@ -10,16 +10,18 @@ export function test() {
     }
 
     switch (i) {
-      case 0:
+      case 0: {
         const zeroStr = `zero=${i}`;
         reprs.push(zeroStr);
         break;
-      case 1:
+      }
+      case 1: {
         const oneStr = `one=${i}`;
         reprs.push(oneStr);
         break;
+      }
       default:
         // do nothing
     }
   }
-};
+}
