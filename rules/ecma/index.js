@@ -65,7 +65,6 @@ module.exports = {
     'no-await-in-loop': 'error',
     'no-bitwise': 'error',
     'no-case-declarations': 'error',
-    'no-compare-neg-zero': 'error',
     'no-console': 'warn',
     'no-continue': 'error',
     'no-div-regex': 'off',
@@ -84,7 +83,6 @@ module.exports = {
     'no-plusplus': 'error',
     'no-restricted-properties': ['error'].concat(restrictedProperties),
     'no-restricted-syntax': ['error'].concat(restrictedSyntax),
-    'no-return-await': 'error',
     'no-script-url': 'error',
     'no-spaced-func': 'error',
     'no-unused-labels': 'error',
@@ -100,11 +98,6 @@ module.exports = {
     'require-await': 'off',
     'vars-on-top': 'error',
 
-    // TODO clean duplicates
-    'import/export': 'error',
-    'import/first': 'error',
-    'import/no-duplicates': 'error',
-    'import/no-mutable-exports': 'error',
     'import/no-unresolved': ['error', { caseSensitive: true, commonjs: true, amd: true }],
   }, override.rules),
 };
