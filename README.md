@@ -2,14 +2,17 @@
 
 # RdBird ESLint Configuration
 
+This is the RdBird configuration for the code checker [ESLint](http://eslint.org)
+The main purpose is to share codestyle, best practises for every rdbird projects.
+
 ## Project installation
 
 ### 1. Install dependency
 ```sh
-npm install @rdbird/eslint-config --save-dev
+npm install @rdbird/eslint-config eslint --save-dev
 ```
 
-### 2. Update `.eslint.json` 
+### 2. Update `.eslintrc.json` 
 Use all plugins :
 ```json
 {
@@ -41,7 +44,7 @@ Cherry pick plugins :
 {
   "scripts": {
     "lint": "eslint .",    
-    "format": "eslint . --fix",    
+    "format": "eslint . --fix"    
   }
 }
 ```
@@ -50,6 +53,18 @@ Then you can launch lint in a terminal
 ```sh
 npm run lint
 ```
+
+## Architecture
+
+For a better community alignement the configuration extends StandardJS :
+
+
+__ Standard JS [https://standardjs.com/]() __
+
+
+Inspiration also comes from :
+*   [AirBnB](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+*   [Supermind](https://github.com/supermind/eslint-config-supermind)
 
 [version-svg]: https://img.shields.io/npm/v/@rdbird/eslint-config.svg?style=flat-square
 [package-url]: https://www.npmjs.com/package/@rdbird/eslint-config
