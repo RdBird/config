@@ -9,8 +9,7 @@ dependencies:
 
 test:
   override:
-    - npm run lint
-    - npm run test
+    - npm run validate
 
 deployment:
   npm:
@@ -18,5 +17,3 @@ deployment:
     commands:
       - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login --scope=@RdBird
       - npm publish || true
-
-
