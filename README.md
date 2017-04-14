@@ -2,7 +2,7 @@
 
 # RdBird ESLint Configuration
 
-This is the RdBird configuration for the code checker [ESLint](http://eslint.org)
+This is the RdBird configuration for the code checker [ESLint](http://eslint.org).
 The main purpose is to share codestyle, best practises for every rdbird projects.
 
 ## Project installation
@@ -25,7 +25,7 @@ Use all plugins :
 
 *OR*
 
-Cherry pick plugins :
+Cherry-pick plugins :
 ```json
 {
   "root": true,
@@ -56,7 +56,7 @@ npm run lint
 
 ## Architecture
 
-For a better community alignement the configuration extends StandardJS :
+For a better community alignment the configuration extends StandardJS :
 
 
 __ Standard JS [https://standardjs.com/]() __
