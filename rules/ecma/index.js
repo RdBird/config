@@ -80,7 +80,7 @@ module.exports = {
     'no-magic-numbers': ['off', { ignore: [], ignoreArrayIndexes: true, enforceConst: true, detectObjects: false }],
     'no-negated-condition': 'off',
     'no-param-reassign': 'error',
-    'no-plusplus': 'error',
+    'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
     'no-restricted-properties': ['error'].concat(restrictedProperties),
     'no-restricted-syntax': ['error'].concat(restrictedSyntax),
     'no-script-url': 'error',
