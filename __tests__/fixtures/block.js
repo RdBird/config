@@ -1,7 +1,8 @@
 export function test() {
   const returnValue = [];
   const reprs = [];
-  for (let i = 0; i < 10; i += 1) {
+
+  for (let i = 0; i < 10; i++) {
     if (i % 2 === 0) {
       returnValue.push(['odd', i]);
     }
