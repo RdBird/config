@@ -29,7 +29,7 @@ export function test() {
   // Ternary operator
   return (
     reprs.length === 0 ? 'zero' :
-    reprs.length === 1 ? 'one' :
-    'other'
+      reprs.length === 1 ? 'one' :
+        'other'
   );
 }
