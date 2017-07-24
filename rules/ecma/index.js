@@ -109,6 +109,7 @@ module.exports = {
         detectObjects: false,
       },
     ],
+    'no-unexpected-multiline': 'off',
     'no-negated-condition': 'off',
     'no-param-reassign': 'error',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],

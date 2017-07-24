@@ -26,9 +26,9 @@ module.exports = {
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
     'eslint-config-standard',
-    'eslint-config-prettier',
     './rules/ecma',
     './rules/jsdoc',
+    'eslint-config-prettier',
   ].map(require.resolve),
 
   rules: {
