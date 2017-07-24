@@ -5,5 +5,7 @@ module.exports = {
     },
   },
   plugins: ['flowtype'],
-  extends: ['./rules/flowtype'].map(require.resolve),
+  extends: ['./rules/flowtype', 'eslint-config-prettier/flowtype'].map(
+    require.resolve
+  ),
 };
