@@ -17,7 +17,7 @@ export class TestComponent extends Component<
   TestComponentProps,
   TestComponentState
 > {
-  static defaultProps = {}
+  static defaultProps = {};
 
   // componentWillMount() {}
 
@@ -37,29 +37,27 @@ export class TestComponent extends Component<
 
   handleClick = () => {
     console.warn('Clicked!');
-  }
+  };
 
   render() {
-    const {
-      children,
-      className,
-      ...other
-    } = this.props;
+    const { children, className, ...other } = this.props;
     return (
-      <div
-        className={ className }
-        data-test="mytest"
-        { ...other }
-      >
+      <div className={className} data-test="mytest" {...other}>
         <div data-label="Self closing" />
+        <button onClick={this.handleClick} data-test-1 data-test-2>
+          Click Me
+        </button>
+
         <button
-          onClick={ this.handleClick }
+          onClick={this.handleClick}
           data-test-1
           data-test-2
+          data-test-3
+          data-test-4
         >
           Click Me
         </button>
-        { children }
+        {children}
       </div>
     );
   }

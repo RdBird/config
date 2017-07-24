@@ -1,40 +1,49 @@
-const override = require('./override');
-const restrictedProperties = [{
-  object: 'arguments',
-  property: 'callee',
-  message: 'arguments.callee is deprecated',
-}, {
-  property: '__defineGetter__',
-  message: 'Please use Object.defineProperty instead.',
-}, {
-  property: '__defineSetter__',
-  message: 'Please use Object.defineProperty instead.',
-}, {
-  object: 'Math',
-  property: 'pow',
-  message: 'Use the exponentiation operator (**) instead.',
-}];
+// prettier-ignore
+const restrictedProperties = [
+  {
+    object: 'arguments',
+    property: 'callee',
+    message: 'arguments.callee is deprecated',
+  },
+  {
+    property: '__defineGetter__',
+    message: 'Please use Object.defineProperty instead.',
+  },
+  {
+    property: '__defineSetter__',
+    message: 'Please use Object.defineProperty instead.',
+  },
+  {
+    object: 'Math',
+    property: 'pow',
+    message: 'Use the exponentiation operator (**) instead.',
+  },
+];
 const restrictedSyntax = [
   {
     selector: 'ForInStatement',
-    message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+    message:
+      'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
   },
   {
     selector: 'ForOfStatement',
-    message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+    message:
+      'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
   },
   {
     selector: 'LabeledStatement',
-    message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+    message:
+      'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
   },
   {
     selector: 'WithStatement',
-    message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+    message:
+      '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
   },
 ];
 
 module.exports = {
-  rules: Object.assign({
+  rules: {
     'array-bracket-spacing': ['error', 'never'],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
@@ -51,8 +60,22 @@ module.exports = {
     'lines-around-comment': 'off',
     'lines-around-directive': ['error', { before: 'always', after: 'always' }],
     'max-depth': ['off', 4],
-    'max-len': ['error', 100, 2, { ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
-    'max-lines': ['off', { max: 300, skipBlankLines: true, skipComments: true }],
+    'max-len': [
+      'error',
+      100,
+      2,
+      {
+        ignoreUrls: true,
+        ignoreComments: false,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
+    ],
+    'max-lines': [
+      'off',
+      { max: 300, skipBlankLines: true, skipComments: true },
+    ],
     'max-nested-callbacks': 'off',
     'max-params': ['off', 3],
     'max-statements-per-line': ['off', { max: 1 }],
@@ -77,10 +100,18 @@ module.exports = {
     'no-inline-comments': 'off',
     'no-invalid-this': 'off',
     'no-lonely-if': 'error',
-    'no-magic-numbers': ['off', { ignore: [], ignoreArrayIndexes: true, enforceConst: true, detectObjects: false }],
+    'no-magic-numbers': [
+      'off',
+      {
+        ignore: [],
+        ignoreArrayIndexes: true,
+        enforceConst: true,
+        detectObjects: false,
+      },
+    ],
     'no-negated-condition': 'off',
     'no-param-reassign': 'error',
-    'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-restricted-properties': ['error'].concat(restrictedProperties),
     'no-restricted-syntax': ['error'].concat(restrictedSyntax),
     'no-script-url': 'error',
@@ -88,16 +119,22 @@ module.exports = {
     'no-unused-labels': 'error',
     'no-useless-concat': 'error',
     'no-var': 'error',
-    'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': [
+      'off',
+      { terms: ['todo', 'fixme', 'xxx'], location: 'start' },
+    ],
     'object-curly-spacing': ['error', 'always'],
     'object-shorthand': 'error',
     'prefer-const': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'as-needed', { 'unnecessary': false }],
-    'radix': 'error',
+    'quote-props': ['error', 'as-needed', { unnecessary: false }],
+    radix: 'error',
     'require-await': 'off',
     'vars-on-top': 'error',
 
-    'import/no-unresolved': ['error', { caseSensitive: true, commonjs: true, amd: true }],
-  }, override.rules),
+    'import/no-unresolved': [
+      'error',
+      { caseSensitive: true, commonjs: true, amd: true },
+    ],
+  },
 };

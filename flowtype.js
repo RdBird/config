@@ -4,10 +4,6 @@ module.exports = {
       onlyFilesWithFlowAnnotation: false,
     },
   },
-  plugins: [
-    'flowtype',
-  ],
-  extends: [
-    './rules/flowtype',
-  ].map(require.resolve),
+  plugins: ['flowtype'],
+  extends: ['./rules/flowtype'].map(require.resolve),
 };

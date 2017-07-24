@@ -1,3 +1,5 @@
+// prettier-ignore
+
 module.exports = {
   /**
    * @see https://github.com/evcohen/eslint-plugin-jsx-a11y/README.md

@@ -5,8 +5,7 @@ export function test() {
   for (let i = 0; i < 10; i++) {
     if (i % 2 === 0) {
       returnValue.push(['odd', i]);
-    }
-    else {
+    } else {
       returnValue.push(['even', i]);
     }
 
@@ -22,14 +21,16 @@ export function test() {
         break;
       }
       default:
-        // do nothing
+      // do nothing
     }
   }
 
   // Ternary operator
-  return (
-    reprs.length === 0 ? 'zero' :
-      reprs.length === 1 ? 'one' :
-        'other'
-  );
+  return reprs.length === 0 ? 'zero' : reprs.length === 1 ? 'one' : 'other';
+}
+
+export function ternary() {
+  const booleanValue = true;
+  const falsyValue = null;
+  return falsyValue ? booleanValue : false;
 }

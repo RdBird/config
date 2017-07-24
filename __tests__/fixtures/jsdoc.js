@@ -6,6 +6,4 @@
  * @param   baz - [description]
  * @returns       [description]
  */
-export function run(foo, bar, baz) {
-
-}
+export function run(foo, bar, baz) {}

@@ -1,5 +1,4 @@
 module.exports = {
-
   // http://eslint.org/docs/user-guide/configuring#specifying-parser
   parser: 'babel-eslint',
 
@@ -22,16 +21,23 @@ module.exports = {
   },
 
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins
-  plugins: [
-    'jsdoc',
-    'node',
-    'import',
-  ],
+  plugins: ['jsdoc', 'node', 'import', 'prettier'],
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
     'eslint-config-standard',
+    'eslint-config-prettier',
     './rules/ecma',
     './rules/jsdoc',
   ].map(require.resolve),
+
+  rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'es5',
+      },
+    ],
+  },
 };

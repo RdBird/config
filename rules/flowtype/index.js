@@ -1,3 +1,5 @@
+// prettier-ignore
+
 module.exports = {
   rules: {
     'flowtype/boolean-style': ['error', 'boolean'],

@@ -4,11 +4,10 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   extends: [
     'eslint-config-standard-react',
     './rules/react',
+    'eslint-config-prettier/react',
   ].map(require.resolve),
 };
