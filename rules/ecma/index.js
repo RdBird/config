@@ -136,5 +136,9 @@ module.exports = {
       'error',
       { caseSensitive: true, commonjs: true, amd: true },
     ],
+
+    'standard/array-bracket-even-spacing': 'off',
+    'standard/computed-property-even-spacing': 'off',
+    'standard/object-curly-even-spacing': 'off',
   },
 };
