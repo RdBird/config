@@ -1,22 +1,34 @@
+# RdBird eslint-config
+
 [![Version][version-svg]][package-url] [![Build Status][circleci-svg]][circleci-url] [![License][license-image]][license-url]
 
-# RdBird ESLint Configuration
+This package provides RdBird's [ESLint](http://eslint.org) configuration as an extensible shared config.
 
-This is the RdBird configuration for the code checker [ESLint](http://eslint.org).
-The main purpose is to share codestyle, best practises for every rdbird projects.
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-## Project installation
 
-### 1. Install dependency
+- [How to use it in your project](#how-to-use-it-in-your-project)
+  - [1. Install dependency](#1-install-dependency)
+  - [2. Update `.eslintrc.json`](#2-update-eslintrcjson)
+  - [3. Update `package.json`](#3-update-packagejson)
+- [Architecture](#architecture)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## How to use it in your project
+
+### Setup requirements
 ```sh
 npm install @rdbird/eslint-config eslint --save-dev
 ```
 
-### 2. Update `.eslintrc.json` 
-Use all plugins :
+### Configure eslint
+
+#### Use all plugins
+***.eslintrc.json***
 ```json
 {
-  "root": true,
   "extends": [
     "@rdbird/eslint-config"
   ]
@@ -25,10 +37,10 @@ Use all plugins :
 
 *OR*
 
-Cherry-pick plugins :
+#### Cherry-pick plugins
+***.eslintrc.json***
 ```json
 {
-  "root": true,
   "extends": [
     "@rdbird/eslint-config/base",
     "@rdbird/eslint-config/react",
@@ -38,8 +50,9 @@ Cherry-pick plugins :
 }
 ```
 
-### 3. Update `package.json` 
+### Setup the lint task
 
+***package.json***
 ```json
 {
   "scripts": {
@@ -49,22 +62,12 @@ Cherry-pick plugins :
 }
 ```
 
-Then you can launch lint in a terminal
-```sh
-npm run lint
-```
-
 ## Architecture
 
-For a better community alignment the configuration extends StandardJS :
-
-
-__ Standard JS [https://standardjs.com/]() __
-
-
-Inspiration also comes from :
-*   [AirBnB](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-*   [Supermind](https://github.com/supermind/eslint-config-supermind)
+For a better community alignment, the configuration extends [StandardJS](https://standardjs.com/). Inspiration also comes from:
+* [AirBnB](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+* [Algolia](https://github.com/algolia/eslint-config-algolia)
+* [Supermind](https://github.com/supermind/eslint-config-supermind)
 
 [version-svg]: https://img.shields.io/npm/v/@rdbird/eslint-config.svg?style=flat-square
 [package-url]: https://www.npmjs.com/package/@rdbird/eslint-config
