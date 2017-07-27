@@ -1,6 +1,6 @@
 {
   "name": "@rdbird/eslint-config",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "RdBird's ESLint configuration",
   "homepage": "https://github.com/RdBird/eslint-config#readme",
   "author": "Julien Polo <jpolo@auchan.fr>",
@@ -47,7 +47,7 @@
     "babel-eslint": "^7.2.3",
     "doctoc": "^1.3.0",
     "eslint": "^4.1.0",
-    "eslint-index": "^1.3.0",    
+    "eslint-index": "^1.3.0",
     "pre-push": "^0.1.1",
     "prettier": "^1.5.3",
     "react": "^15.5.4"

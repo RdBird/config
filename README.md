@@ -21,10 +21,6 @@ This package provides RdBird's [ESLint](http://eslint.org) configuration as an e
 ### Setup requirements
 ```sh
 npm install \
-eslint-plugin-import eslint-plugin-jsdoc \
-eslint-plugin-jsx-a11y eslint-plugin-node \
-eslint-plugin-prettier eslint-plugin-promise \
-eslint-plugin-react eslint-plugin-standard \
 eslint babel-eslint prettier \
 @rdbird/eslint-config \
 --save-dev
