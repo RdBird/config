@@ -1,6 +1,6 @@
 {
   "name": "@rdbird/eslint-config",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "RdBird's ESLint configuration",
   "homepage": "https://github.com/RdBird/eslint-config#readme",
   "author": "Julien Polo <jpolo@auchan.fr>",
@@ -35,7 +35,7 @@
     "url": "https://github.com/RdBird/eslint-config/issues"
   },
   "dependencies": {
-    "eslint-config-prettier": "2.6.0",
+    "eslint-config-prettier": "2.7.0",
     "eslint-config-standard": "10.2.1",
     "eslint-config-standard-react": "5.0.0",
     "eslint-plugin-flowtype": "^2.34.0",
