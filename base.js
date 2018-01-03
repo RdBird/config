@@ -1,6 +1,6 @@
 module.exports = {
   // http://eslint.org/docs/user-guide/configuring#specifying-parser
-  parser: 'babel-eslint',
+  // parser: 'babel-eslint',
 
   // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
   /* parserOptions: {
