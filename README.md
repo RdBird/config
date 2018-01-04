@@ -1,6 +1,10 @@
-# RdBird eslint-config
+[<img src="https://rawgit.com/RdBird/rdbird.io/master/RDBIRD_logo.svg" alt="RdBird Project" height="40" />][rdbird-url] 
 
-[![Version][version-svg]][package-url] [![Build Status][circleci-svg]][circleci-url] [![License][license-image]][license-url]
+# ESLint Configuration
+
+[![Version][version-svg]][package-url] 
+[![Build Status][circleci-svg]][circleci-url] 
+[![License][license-image]][license-url]
 
 This package provides RdBird's [ESLint](http://eslint.org) configuration as an extensible shared config.
 
@@ -72,6 +76,7 @@ For a better community alignment, the configuration extends [StandardJS](https:/
 * [Algolia](https://github.com/algolia/eslint-config-algolia)
 * [Supermind](https://github.com/supermind/eslint-config-supermind)
 
+[rdbird-url]: //rdbird.io
 [version-svg]: https://img.shields.io/npm/v/@rdbird/eslint-config.svg?style=flat-square
 [package-url]: https://www.npmjs.com/package/@rdbird/eslint-config
 [circleci-svg]: https://circleci.com/gh/RdBird/eslint-config.svg?style=shield
